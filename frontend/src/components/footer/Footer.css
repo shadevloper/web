@@ -1,0 +1,202 @@
+.footer{
+  background:#0f172a;
+  color:white;
+  padding:60px 60px 20px;
+}
+
+/* TOP */
+.footer-logo{
+  width: 125px;
+}
+.footer-top{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:40px;
+}
+
+.footer h4{
+  margin-bottom:15px;
+}
+
+.footer p{
+  color:#cbd5f5;
+  font-size:14px;
+  margin-bottom: 15px;
+}
+
+/* Typewriter animation */
+.footer-tagline{
+  min-height: 42px;
+}
+
+.type-cursor{
+  display:inline-block;
+  color:#22c55e;
+  font-weight:bold;
+  margin-left:2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink{
+  0%, 100% { opacity:1; }
+  50% { opacity:0; }
+}
+
+.footer ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer li{
+  margin-bottom:8px;
+  font-size:14px;
+  color:#cbd5f5;
+}
+.social-media{
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.social-media a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+font-size: 1.2em;
+ transition: color 0.3s;
+ margin-left: 15px;
+
+        }
+.social-media p{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* column 4 */
+.contact-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.contact-item i {
+  background: rgba(255, 0, 0, 0.566);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-item p {
+  margin-bottom: 0;
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+.footer-phone, .footer-email {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+/* BOTTOM */
+
+.footer-bottom{
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid #1e293b;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+}
+
+.F-badge{
+  background:#22c55e;
+  padding:5px 10px;
+  border-radius:15px;
+  font-size:12px;
+}
+
+.links a{
+  margin-left:15px;
+  color:#cbd5f5;
+  font-size:12px;
+}
+
+/* Floating chat */
+
+.chat-btn{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#1e40af;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:25px;
+}
+
+/* Responsive */
+
+/* Tablet (768px - 900px) */
+@media(max-width:900px){
+  .footer { padding: 40px 30px 15px; }
+  .footer-top { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .footer-logo { width: 100px; }
+  .footer h4 { font-size: 15px; }
+  .footer p { font-size: 13px; }
+  .footer li { font-size: 13px; }
+  .social-media { margin-left: 0; }
+  .footer-bottom { flex-direction: column; gap: 12px; font-size: 12px; }
+}
+
+/* Mobile (480px - 768px) */
+@media(max-width:768px){
+  .footer { padding: 30px 20px 10px; }
+  .footer-top { grid-template-columns: 1fr; gap: 25px; }
+  .footer-logo { width: 80px; }
+  .footer h4 { font-size: 14px; margin-bottom: 10px; }
+  .footer p { font-size: 12px; margin-bottom: 10px; }
+  .footer li { font-size: 12px; margin-bottom: 6px; }
+  .footer ul { margin-bottom: 10px; }
+  .social-media { margin-left: 0; margin-top: 15px; }
+  .social-media a { margin: 0 8px 0 0; font-size: 1em; }
+  .social-media p { margin-bottom: 8px; font-size: 12px; }
+  .footer-phone, .footer-email { width: 40px; height: 40px; font-size: 18px; }
+  .contact-item { gap: 12px; margin-bottom: 15px; }
+  .contact-item i { width: 40px; height: 40px; font-size: 18px; }
+  .contact-item p { font-size: 12px; }
+  .footer-bottom { flex-direction: column; gap: 10px; font-size: 11px; }
+  .links a { margin-left: 0; margin-right: 10px; font-size: 11px; }
+  .chat-btn { padding: 8px 14px; font-size: 12px; }
+}
+
+/* Small Mobile (320px - 480px) */
+@media(max-width:480px){
+  .footer { padding: 20px 15px 8px; }
+  .footer-top { gap: 15px; }
+  .footer-logo { width: 70px; }
+  .footer h4 { font-size: 12px; margin-bottom: 8px; }
+  .footer p { font-size: 11px; margin-bottom: 8px; }
+  .footer li { font-size: 11px; margin-bottom: 4px; }
+  .social-media { margin-top: 10px; }
+  .social-media a { font-size: 0.9em; margin: 0 6px 0 0; }
+  .contact-item { gap: 10px; margin-bottom: 12px; }
+  .contact-item i { width: 36px; height: 36px; font-size: 16px; }
+  .contact-item p { font-size: 11px; }
+  .social-media p { font-size: 11px; margin-bottom: 6px; }
+  .footer-phone, .footer-email { width: 36px; height: 36px; font-size: 16px; }
+  .footer-bottom { gap: 8px; font-size: 10px; }
+  .links a { font-size: 10px; margin-right: 8px; }
+  .chat-btn { padding: 6px 12px; font-size: 11px; }
+}

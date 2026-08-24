@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.test-container {
+  padding: 80px 60px;
+  background: #f6faff;
+  text-align: center;
+}
+
+.test-small {
+  color: red;
+  font-size: 13px;
+}
+
+.test-desc {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Grid */
+
+.test-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+/* Review Summary */
+
+.review-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  background: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.summary-rating {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.summary-stars {
+  color: gold;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.summary-count {
+  color: #555;
+  font-size: 13px;
+}
+
+/* Card */
+
+.test-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 25px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.14);
+}
+
+/* Card top: avatar + verified */
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Avatar */
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #cfe0ff;
+  object-fit: cover;
+}
+
+/* Verified badge */
+
+.verify-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #e7f8ee;
+  color: #16a34a;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.verify-badge i {
+  color: #16a34a;
+}
+
+/* Stars */
+
+.stars {
+  color: gold;
+  margin: 15px 0;
+  letter-spacing: 2px;
+}
+
+/* Review date */
+
+.review-date {
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Quote */
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Badge */
+
+.T-badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ffe8e8;
+  color: red;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+/* Floating Button */
+
+.talk-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+}
+
+/* Responsive */
+
+/* Tablet (768px - 900px) */
+@media(max-width:900px){
+  .test-container { padding: 60px 30px; }
+  .test-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile (480px - 768px) */
+@media(max-width:768px){
+  .test-container { padding: 40px 20px; }
+  .test-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .test-card { padding: 30px 20px; }
+  .quote { font-size: 13px; }
+}
+
+/* Small Mobile (320px - 480px) */
+@media(max-width:480px){
+  .test-container { padding: 25px 15px; }
+  .test-desc { font-size: 13px; }
+  .test-grid { margin-top: 20px; gap: 14px; }
+  .test-card { padding: 24px 16px; }
+  .avatar { width: 60px; height: 60px; }
+  .quote { font-size: 12px; }
+}

@@ -1,0 +1,175 @@
+.eligibility-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.eligibility-box {
+  background: white;
+  width: 650px;
+  height: 800px;
+  padding: 35px;
+  border-radius: 18px;
+  margin-top: 150px;
+  position: relative;
+  animation: pop 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  transition: color 200ms ease;
+}
+
+.close:hover {
+  color: #d32f2f;
+}
+
+.eligibility-box h2 {
+  margin-bottom: 8px;
+  color: #1e3a8a;
+  font-size: 24px;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.eligibility-box label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.eligibility-box input,
+.eligibility-box select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 250ms ease, background-color 250ms ease;
+  font-family: inherit;
+}
+
+.eligibility-box input:focus,
+.eligibility-box select:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: rgba(37, 99, 235, 0.02);
+}
+
+.eligibility-box button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 300ms cubic-bezier(0.2, 0.9, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+.eligibility-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(37, 99, 235, 0.35);
+}
+
+.eligibility-box button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.2);
+}
+
+/* Validation Styles */
+.error-text {
+  color: #d32f2f;
+  font-size: 12px;
+  display: block;
+  margin: -8px 0 8px 0;
+  font-weight: 500;
+}
+
+.input-error {
+  border-color: #d32f2f !important;
+  background-color: rgba(211, 47, 47, 0.05) !important;
+}
+
+.eligibility-success {
+  background: #4caf50;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  animation: slideDown 0.4s ease-out;
+  text-align: center;
+  font-size: 14px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .eligibility-box {
+    width: 90vw;
+    padding: 25px;
+  }
+
+  .eligibility-box h2 {
+    font-size: 20px;
+  }
+
+  .eligibility-box label {
+    font-size: 12px;
+  }
+
+  .eligibility-box input,
+  .eligibility-box select {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .eligibility-box button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

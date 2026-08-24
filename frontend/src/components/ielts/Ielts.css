@@ -1,0 +1,215 @@
+*{
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+.ielts{
+  padding:80px 60px;
+  background:#f7fbff;
+}
+
+/* GRID */
+
+.ielts-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+/* IMAGE */
+
+.ielts-image{
+  position:relative;
+}
+
+.ielts-image img{
+  width:100%;
+  border-radius:25px;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Badge */
+
+.badge{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:white;
+  padding:12px 18px;
+  border-radius:12px;
+  font-size:14px;
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* Achievement badges on image */
+.ielts-badges{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  display:flex;
+  gap:12px;
+}
+
+.ielts-badges span{
+  background:white;
+  padding:10px 16px;
+  border-radius:12px;
+  font-size:13px;
+  color:#333;
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.ielts-badges i{
+  color:#2563eb;
+  font-size:16px;
+}
+
+.ielts-badges strong{
+  color:#dc2626;
+  font-size:16px;
+}
+
+/* CONTENT */
+
+.tag{
+  color:red;
+  font-size:13px;
+  font-weight:600;
+}
+
+.ielts-content h1{
+  margin:10px 0 20px;
+  font-size:42px;
+}
+
+.desc{
+  color:#555;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  margin-bottom:35px;
+}
+
+.item{
+  display:flex;
+  gap:15px;
+  background:white;
+  padding:15px;
+  border-radius:12px;
+}
+
+.item h4{
+  margin-bottom:5px;
+}
+
+.item p{
+  font-size:14px;
+  color:#666;
+}
+
+/* BUTTON */
+
+.enroll-btn{
+  background:#dc2626;
+  color:white;
+  border:none;
+  padding:14px 30px;
+  border-radius:10px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+small{
+  display:block;
+  margin-top:15px;
+  color:#555;
+}
+
+/* Floating chat */
+
+.chat-btn{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#1e40af;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:25px;
+}
+
+/* RESPONSIVE */
+
+/* Tablet (768px - 900px) */
+@media(max-width:900px){
+  .ielts-grid{
+    grid-template-columns:1fr;
+  }
+  .features{
+    grid-template-columns:1fr;
+  }
+  .ielts{
+    padding:50px 20px;
+  }
+  .ielts-content h1{
+    font-size:30px;
+  }
+}
+
+/* Mobile (480px - 768px) */
+@media(max-width:768px){
+  .ielts { padding: 40px 16px; }
+  .ielts-grid { gap: 30px; }
+  .ielts-content h1 { font-size: 26px; margin: 8px 0 15px; }
+  .desc { font-size: 14px; margin-bottom: 20px; }
+  .features { gap: 15px; margin-bottom: 25px; }
+  .item { padding: 12px; }
+  .item h4 { font-size: 14px; }
+  .item p { font-size: 13px; }
+  .enroll-btn { padding: 12px 24px; font-size: 14px; }
+  .badge { padding: 8px 12px; font-size: 12px; }
+}
+
+/* Small Mobile (320px - 480px) */
+@media(max-width:480px){
+  .ielts { padding: 25px 12px; }
+  .ielts-grid { gap: 20px; }
+  .ielts-content h1 { font-size: 22px; }
+  .tag { font-size: 12px; }
+  .desc { font-size: 13px; }
+  .features { gap: 12px; }
+  .item { gap: 10px; padding: 10px; }
+  .item i { font-size: 24px; }
+  .item h4 { font-size: 13px; }
+  .item p { font-size: 12px; }
+  .enroll-btn { padding: 10px 20px; font-size: 13px; width: 100%; }
+  .badge { top: 10px; right: 10px; padding: 6px 10px; font-size: 11px; }
+}
+/* icons  */
+.i-user{
+  font-size:30px;
+  color:#2563eb;
+}
+.i-material{
+  font-size:30px;
+  color:#2563eb;
+}                              
+.i-mock{
+  font-size:30px;
+  color:#2563eb;
+}
+.i-audio{
+  font-size:30px;
+  color:#2563eb;
+}

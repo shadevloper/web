@@ -1,0 +1,176 @@
+/* CEO Message Styles */
+.ceo-message {
+  padding: 60px 60px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f4ff 100%);
+  min-height: calc(100vh - 80px);
+}
+
+.message-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ceo-message h1 {
+  font-size: 42px;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.message-content {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.message-image {
+  position: sticky;
+  top: 100px;
+}
+
+.message-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  object-fit: cover;
+}
+
+.message-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message-header h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.message-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message-body p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+  text-align: justify;
+  margin: 0;
+}
+
+.signature {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #e5e7eb;
+  text-align: center;
+}
+
+.sign-off {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.ceo-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ceo-message {
+    padding: 40px 30px;
+  }
+
+  .ceo-message h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .message-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 30px 24px;
+  }
+
+  .message-image {
+    position: static;
+  }
+
+  .message-image img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .message-header h2 {
+    font-size: 24px;
+  }
+
+  .message-body p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .ceo-message {
+    padding: 30px 16px;
+  }
+
+  .ceo-message h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .message-content {
+    grid-template-columns: 1fr;
+    padding: 18px 14px;
+    gap: 18px;
+  }
+
+  .message-image img {
+    max-width: 100%;
+  }
+
+  .message-header h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .message-body p {
+    font-size: 13px;
+  }
+
+  .signature {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+
+  .ceo-name {
+    font-size: 16px;
+  }
+
+  .company-name {
+    font-size: 13px;
+  }
+}

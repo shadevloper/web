@@ -1,0 +1,185 @@
+*{
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+.cta-section{
+  padding:90px 20px;
+  text-align:center;
+  color:white;
+  background:linear-gradient(135deg,#2563eb,#1e3a8a);
+}
+
+/* Heading */
+
+.cta-section h1{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+/* Subtitle */
+
+.cta-sub{
+  max-width:700px;
+  margin:0 auto 35px;
+  line-height:1.6;
+  opacity:.9;
+}
+
+/* Button */
+
+.cta-btn{
+  background:white;
+  color:#2563eb;
+  border:none;
+  padding:20px 60px;
+  border-radius:30px;
+  font-size:16px;
+  font-weight: bold;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+      background-color:transparent;
+               color:#FFFFFF;
+    position:relative;
+    overflow:hidden;
+    transition:all .5s ease-in-out;
+    border:2px solid #FFFFFF;
+}
+.cta-btn:before{
+    content:"";
+    display:inline-block;
+    width:318px;
+    height:318px;
+    position:absolute;
+    background-color:#FFFFFF;
+    left:0;
+    top:70px;
+    transition:all .5s ease-in-out;
+    z-index:-2
+    }
+    .cta-btn:after{
+    content:"";
+    background-color:#FFFFFF;
+    top:-300px;
+    transition:all .5s ease-in-out;
+    }
+    .cta-btn:hover:after,.cta-btn:hover:before{
+    top:0;
+    }
+    .cta-btn:hover{
+    color:rgb(60, 120, 231);
+    transform:scale(1.2,1.2)
+    }
+.C-confidential i{
+  color:rgb(25, 236, 25);
+}
+.C-response i{
+  color:rgb(212, 212, 11);
+}
+.C-guidence i{
+  color:rgb(249, 122, 37);
+}
+/* Note */
+
+.cta-note{
+  margin-top:15px;
+  font-size:13px;
+  opacity:.8;
+}
+
+/* Features */
+
+.cta-features{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  font-size:14px;
+}
+
+.cta-features div{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.cta-section{
+  padding:70px 20px;
+}
+
+.cta-section h1{
+  font-size:32px;
+}
+
+.cta-btn{
+  padding:16px 40px;
+  font-size:14px;
+}
+
+}
+
+@media(max-width:768px){
+
+.cta-section{
+  padding:60px 20px;
+}
+
+.cta-section h1{
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.cta-sub{
+  max-width:100%;
+  margin:0 auto 25px;
+  font-size:14px;
+}
+
+.cta-features{
+  flex-direction:column;
+  gap:15px;
+}
+
+.cta-btn{
+  padding:14px 35px;
+  font-size:13px;
+}
+
+}
+
+@media(max-width:480px){
+
+.cta-section{
+  padding:40px 15px;
+}
+
+.cta-section h1{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.cta-sub{
+  font-size:12px;
+  margin:0 auto 20px;
+  line-height:1.5;
+}
+
+.cta-features{
+  gap:10px;
+}
+
+.cta-features div{
+  gap:5px;
+  font-size:12px;
+}
+
+.cta-btn{
+  padding:12px 30px;
+  font-size:12px;
+}
+
+}

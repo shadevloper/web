@@ -1,0 +1,36 @@
+<!-- <html>
+<head>
+  <title>Book Consultation</title>
+</head>
+<body>
+  <h2>Book Consultation Form</h2>
+
+  <form id="consultationForm">
+    <input type="text" name="firstName" placeholder="First Name" required><br><br>
+    <input type="text" name="lastName" placeholder="Last Name"><br><br>
+    <input type="text" name="mobileNumber" placeholder="Mobile Number" required><br><br>
+    <input type="email" name="email" placeholder="Email" required><br><br>
+    <input type="text" name="countryPreferred" placeholder="Country Preferred"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('consultationForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const formData = Object.fromEntries(new FormData(this));
+
+      const response = await fetch('/api/book-consultation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      alert(result.message);
+    });
+  </script>
+</body>
+</html> -->

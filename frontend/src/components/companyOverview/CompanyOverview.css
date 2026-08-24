@@ -1,0 +1,255 @@
+/* Company Overview Styles */
+.company-overview {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f4ff 100%);
+  min-height: calc(100vh - 80px);
+}
+
+/* Hero */
+.overview-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+  padding: 80px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overview-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.overview-hero-label {
+  color: #ff6f61;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.overview-hero h1 {
+  font-size: 46px;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.overview-hero-sub {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Stats */
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 1100px;
+  margin: -40px auto 0;
+  padding: 0 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.stat {
+  background: #fff;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  border-right: 1px solid #eef2ff;
+}
+
+.stat:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.stat:last-child {
+  border-right: none;
+  border-radius: 0 16px 16px 0;
+}
+
+.stat strong {
+  display: block;
+  font-size: 32px;
+  color: #1e3a8a;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.overview-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.overview-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.overview-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+  transition: all 300ms cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.overview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.12);
+}
+
+.overview-card h2 {
+  font-size: 24px;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #eef2ff;
+}
+
+.overview-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.overview-card p:last-child {
+  margin-bottom: 0;
+}
+
+.overview-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overview-card li {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.overview-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.overview-card li strong {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .overview-hero {
+    padding: 50px 30px;
+  }
+
+  .overview-hero h1 {
+    font-size: 32px;
+  }
+
+  .overview-stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin: -40px auto 0;
+    padding: 0 30px;
+    gap: 16px;
+  }
+
+  .stat {
+    border-radius: 16px !important;
+    border-right: none;
+  }
+
+  .overview-container {
+    padding: 40px 30px;
+  }
+
+  .overview-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .overview-card {
+    padding: 24px;
+  }
+
+  .overview-card h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-hero {
+    padding: 40px 16px;
+  }
+
+  .overview-hero h1 {
+    font-size: 24px;
+  }
+
+  .overview-hero-sub {
+    font-size: 14px;
+  }
+
+  .overview-stats {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px;
+    margin-top: -30px;
+  }
+
+  .stat {
+    padding: 20px 12px;
+  }
+
+  .stat strong {
+    font-size: 24px;
+  }
+
+  .stat span {
+    font-size: 11px;
+  }
+
+  .overview-container {
+    padding: 30px 16px;
+  }
+
+  .overview-card {
+    padding: 18px;
+  }
+
+  .overview-card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .overview-card p,
+  .overview-card li {
+    font-size: 14px;
+  }
+}
