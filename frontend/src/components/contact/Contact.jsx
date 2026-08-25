@@ -75,7 +75,7 @@ const handleSendSubmit = async (event) => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/contact",
+        "https://amsterimmigration.onrender.com/api/contact",
         {
           method: "POST",
           headers: {

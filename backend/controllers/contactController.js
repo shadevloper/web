@@ -1,5 +1,5 @@
 const Contact = require("../models/Contact");
-const { sendNotificationEmail } = require("../config/email");
+// const { sendNotificationEmail } = require("../config/email");
 
 exports.submitContactForm = async (req, res) => {
   try {
@@ -18,18 +18,18 @@ exports.submitContactForm = async (req, res) => {
 console.log("DATA SAVED:", savedData);
 
     // Send email notification (non-fatal — data is already saved to MongoDB)
-    await sendNotificationEmail({
-      subject: "New Contact Form Submission",
-      title: "New Contact Enquiry",
-      fields: {
-        "Full Name": req.body.fullName,
-        "Email": req.body.email,
-        "Phone": req.body.phoneNumber,
-        "Interested Country": req.body.interestedCountry,
-        "Service Required": req.body.serviceRequired,
-        "Message": req.body.message
-      }
-    });
+    // await sendNotificationEmail({
+    //   subject: "New Contact Form Submission",
+    //   title: "New Contact Enquiry",
+    //   fields: {
+    //     "Full Name": req.body.fullName,
+    //     "Email": req.body.email,
+    //     "Phone": req.body.phoneNumber,
+    //     "Interested Country": req.body.interestedCountry,
+    //     "Service Required": req.body.serviceRequired,
+    //     "Message": req.body.message
+    //   }
+    // });
 
     res.status(201).json({
       success: true,

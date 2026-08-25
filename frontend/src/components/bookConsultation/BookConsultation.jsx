@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
 
   if (Object.keys(newErrors).length === 0) {
     try {
-      const response = await fetch("http://localhost:5000/api/book-consultation", {
+      const response = await fetch("https://amsterimmigration.onrender.com/api/book-consultation", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -123,7 +123,7 @@ const handleSubmit = async (e) => {
     } catch (error) {
       console.error(error);
       showToast(
-        "Server error: Could not submit your booking. Please make sure the backend server is running on http://localhost:5000 and try again.",
+        "Server error: Could not submit your booking. Please make sure the backend server is running on https://amsterimmigration.onrender.com/ and try again.",
         "error"
       );
     }

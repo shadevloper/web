@@ -1,5 +1,5 @@
 const Enquiry = require("../models/Enquiry");
-const { sendNotificationEmail } = require("../config/email");
+// const { sendNotificationEmail } = require("../config/email");
 
 exports.submitEnquiry = async (req, res) => {
 
@@ -12,17 +12,17 @@ exports.submitEnquiry = async (req, res) => {
     console.log("SAVED:", enquiry);
 
     // Send email notification (non-fatal — data is already saved to MongoDB)
-    await sendNotificationEmail({
-      subject: "New Website Enquiry",
-      title: "New Enquiry",
-      fields: {
-        "Name": req.body.name,
-        "Email": req.body.email,
-        "Phone": req.body.phone,
-        "Country": req.body.country,
-        "Message": req.body.message
-      }
-    });
+    // await sendNotificationEmail({
+    //   subject: "New Website Enquiry",
+    //   title: "New Enquiry",
+    //   fields: {
+    //     "Name": req.body.name,
+    //     "Email": req.body.email,
+    //     "Phone": req.body.phone,
+    //     "Country": req.body.country,
+    //     "Message": req.body.message
+    //   }
+    // });
 
     res.status(201).json({
       success: true,

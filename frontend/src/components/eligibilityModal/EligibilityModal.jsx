@@ -71,7 +71,7 @@ const submitEligibility = async () => {
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/eligibility",
+      "https://amsterimmigration.onrender.com/api/eligibility",
       {
         method: "POST",
 

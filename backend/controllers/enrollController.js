@@ -1,5 +1,5 @@
 const Enroll = require("../models/Enroll");
-const { sendNotificationEmail } = require("../config/email");
+// const { sendNotificationEmail } = require("../config/email");
 
 exports.addEnroll = async (req, res) => {
 
@@ -12,17 +12,17 @@ exports.addEnroll = async (req, res) => {
     console.log("SAVED:", enroll);
 
     // Send email notification (non-fatal — data is already saved to MongoDB)
-    await sendNotificationEmail({
-      subject: "New IELTS Enrollment Request",
-      title: "New IELTS Training Enrollment",
-      fields: {
-        "Full Name": req.body.fullName,
-        "Email": req.body.email,
-        "Phone": req.body.phone,
-        "Target Band Score": req.body.score,
-        "Preferred Batch": req.body.batch
-      }
-    });
+    // await sendNotificationEmail({
+    //   subject: "New IELTS Enrollment Request",
+    //   title: "New IELTS Training Enrollment",
+    //   fields: {
+    //     "Full Name": req.body.fullName,
+    //     "Email": req.body.email,
+    //     "Phone": req.body.phone,
+    //     "Target Band Score": req.body.score,
+    //     "Preferred Batch": req.body.batch
+    //   }
+    // });
 
     res.status(201).json({
       success: true,

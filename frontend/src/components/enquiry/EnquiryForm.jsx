@@ -71,7 +71,7 @@ export default function EnquiryForm() {
     setSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/enquiry", {
+      const response = await fetch("https://amsterimmigration.onrender.com/api/enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
