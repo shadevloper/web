@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/amster-logo.png";
 import "./Footer.css";
 
@@ -49,7 +50,7 @@ export default function Footer() {
         <div>
           <h4>Services</h4>
           <ul>
-            <li>Immigration Services</li>
+            <li to="/services">Immigration Services</li>
             {/* <li>Study Abroad</li> */}
             <li>IELTS Training</li>
             <li>Job Placement</li>
@@ -106,10 +107,8 @@ export default function Footer() {
      
 
         <div className="links">
-          <a>Privacy Policy</a>
-          <a>Terms & Conditions</a>
-
-     
+          <Link to="/PrivacyPolicy">Privacy Policy</Link>
+          <Link to="/terms-and-conditions">Terms & Conditions</Link>
         </div>
 
 </div>

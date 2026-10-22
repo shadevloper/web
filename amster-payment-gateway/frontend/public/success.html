@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Successful | Amster Overseas</title>
+  <style>
+    body{margin:0;background:#f5f7fb;font-family:Arial,sans-serif;display:grid;place-items:center;min-height:100vh}
+    .box{background:white;padding:42px 30px;border-radius:20px;max-width:460px;width:calc(100% - 40px);text-align:center;box-shadow:0 18px 60px rgba(24,35,60,.12)}
+    img{width:220px;max-width:80%}.icon{font-size:54px;margin:15px 0 5px}h1{margin:5px 0 10px;color:#173b2b}
+    p{color:#687386;line-height:1.6}.id{font-weight:700;word-break:break-all;color:#172033}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="/amster-logo.jpeg" alt="Amster Overseas">
+    <div class="icon">✓</div>
+    <h1>Payment Successful</h1>
+    <p>Your payment has been completed successfully.</p>
+    <p class="id" id="pid"></p>
+  </div>
+  <script>
+    const id = new URLSearchParams(location.search).get("payment_id");
+    if (id) document.getElementById("pid").textContent = "Payment ID: " + id;
+  </script>
+</body>
+</html>

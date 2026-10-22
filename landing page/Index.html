@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amster Overseas | Immigration & Overseas Opportunities</title>
+  <meta name="description" content="Explore Canada PR, Australia PR and Europe Work Permit opportunities with Amster Overseas. Check your eligibility today.">
+
+  <style>
+    :root {
+      --blue-900: #0d2d6b;
+      --blue-800: #123f8d;
+      --blue-700: #1d4eb3;
+      --red-600: #d62828;
+      --red-500: #ef4444;
+      --red-100: #fff1f2;
+      --navy-950: #081a38;
+      --text: #172033;
+      --muted: #667085;
+      --panel: #ffffff;
+      --line: #e7ebf3;
+      --bg: #f5f7fb;
+      --success: #1b8f5a;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none}
+    button,input,select{font-family:inherit}
+    header{background:linear-gradient(90deg,#0a1f4d 0%,#103f8a 45%,#d62828 100%);position:sticky;top:0;z-index:1000;box-shadow:0 8px 24px rgba(10,31,77,.18)}
+    .header-container{max-width:1200px;margin:auto;padding:16px 25px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+    .logo-mark svg{width:28px;height:28px;display:block}
+    .brand-text{display:flex;flex-direction:column;line-height:1.1}
+    .brand-name{font-size:22px;font-weight:800;color:#fff;letter-spacing:1.1px}
+    .brand-sub{font-size:11px;font-weight:700;color:#ffd3d3;letter-spacing:2.4px}
+    .top-nav{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+    .top-nav a{color:#edf3ff;font-size:14px;font-weight:600;opacity:.9}
+    .top-nav a:hover{opacity:1}
+    .header-btn{background:#fff;color:var(--blue-900);padding:11px 20px;border-radius:999px;font-size:14px;font-weight:700;box-shadow:0 8px 18px rgba(0,0,0,.14)}
+    .hero{background:linear-gradient(120deg,#0b234d 0%,#153f88 55%,#d62828 100%);color:#fff;padding:75px 20px 90px}
+    .hero-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .hero-content h1{font-size:52px;line-height:1.12;margin-bottom:22px;font-weight:800}
+    .hero-content h1 span{color:#ffd166}
+    .hero-content p{font-size:19px;max-width:650px;color:#e9eef8;margin-bottom:30px}
+    .hero-buttons{display:flex;gap:15px;flex-wrap:wrap}
+    .primary-btn{background:linear-gradient(135deg,#ef4444,#d62828);color:#fff;padding:14px 26px;border-radius:7px;font-weight:700;display:inline-block;box-shadow:0 12px 22px rgba(214,40,40,.3)}
+    .secondary-btn{border:1px solid rgba(255,255,255,.6);color:#fff;padding:13px 25px;border-radius:7px;font-weight:600;display:inline-block}
+    .hero-card{background:#fff;color:#172033;border-radius:14px;padding:30px;box-shadow:0 20px 50px rgba(0,0,0,.2)}
+    .hero-card h3{font-size:24px;margin-bottom:8px;color:#071b49}
+    .hero-card p{color:#667085;margin-bottom:22px;font-size:14px}
+    .quick-list{list-style:none}
+    .quick-list li{padding:11px 0;border-bottom:1px solid #edf0f5;font-size:15px}
+    .check{color:#16804b;font-weight:bold;margin-right:8px}
+    .section{padding:75px 20px}
+    .container{max-width:1200px;margin:auto}
+    .section-title{text-align:center;margin-bottom:45px}
+    .section-title h2{font-size:36px;color:#071b49;margin-bottom:10px}
+    .section-title p{color:#667085;max-width:650px;margin:auto}
+    .program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+    .program-card{background:#fff;padding:32px;border-radius:12px;border:1px solid #e5e8ef;transition:.25s}
+    .program-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(7,27,73,.1)}
+    .program-icon{width:55px;height:55px;border-radius:10px;background:#edf3ff;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:20px}
+    .program-card h3{color:#071b49;font-size:23px;margin-bottom:10px}
+    .program-card p{color:#667085;font-size:15px;margin-bottom:20px}
+    .program-link{color:#0b4fa3;font-weight:700;font-size:14px}
+    .application-section{background:#eef3fa;padding:80px 20px}
+    .form-wrapper{max-width:850px;margin:auto;background:#fff;border-radius:15px;padding:42px;box-shadow:0 15px 45px rgba(7,27,73,.09)}
+    .form-header{text-align:center;margin-bottom:30px}
+    .form-header h2{color:#071b49;font-size:34px;margin-bottom:8px}
+    .form-header p{color:#667085}
+    .program-selector{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:30px}
+    .program-option{border:1px solid #d8dee9;padding:14px 10px;border-radius:7px;text-align:center;cursor:pointer;font-weight:600;font-size:14px;color:#344054;transition:.2s}
+    .program-option.active{background:#071b49;color:#fff;border-color:#071b49}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .form-group{display:flex;flex-direction:column}
+    .form-group.full{grid-column:1/-1}
+    label{font-size:14px;font-weight:600;color:#344054;margin-bottom:7px}
+    label span{color:#d92d20}
+    input,select{width:100%;height:48px;border:1px solid #d0d5dd;border-radius:7px;padding:0 13px;font-size:14px;outline:none;background:#fff;color:#172033}
+    input:focus,select:focus{border-color:#0b4fa3;box-shadow:0 0 0 3px rgba(11,79,163,.08)}
+    .phone-wrapper{display:grid;grid-template-columns:115px 1fr;gap:8px}
+    .phone-code{padding:0 7px;font-size:13px}
+    #europeCountryGroup{display:none}
+    .europe-note{display:none;background:#fff8e6;border:1px solid #f2d48b;color:#6f5515;padding:13px 15px;border-radius:7px;font-size:13px;margin-top:22px}
+    .consent{display:flex;align-items:flex-start;gap:10px;margin-top:22px}
+    .consent input{width:18px;height:18px;margin-top:2px;flex-shrink:0}
+    .consent label{font-weight:400;font-size:13px;color:#667085;margin:0}
+    .submit-btn{width:100%;height:52px;border:0;background:#071b49;color:#fff;border-radius:7px;margin-top:25px;font-size:16px;font-weight:700;cursor:pointer}
+    .submit-btn:disabled{opacity:.6;cursor:not-allowed}
+    .message{display:none;padding:14px;border-radius:7px;margin-top:20px;text-align:center;font-size:14px}
+    .success-message{background:#ecfdf3;color:#027a48;border:1px solid #abefc6}
+    .error-message{background:#fef3f2;color:#b42318;border:1px solid #fecdca}
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .why-card{text-align:center;background:#fff;border:1px solid #e5e8ef;border-radius:10px;padding:28px 18px}
+    .why-icon{font-size:32px;margin-bottom:12px}
+    .why-card h4{color:#071b49;margin-bottom:8px}
+    .why-card p{color:#667085;font-size:13px}
+    .cta{background:#071b49;color:#fff;padding:65px 20px;text-align:center}
+    .cta h2{font-size:36px;margin-bottom:12px}
+    .cta p{color:#dce5f4;margin-bottom:25px}
+    footer{background:#04122f;color:#c7d0df;padding:35px 20px;text-align:center;font-size:13px}
+    footer strong{color:#fff}
+    .whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 8px 25px rgba(0,0,0,.2);z-index:999}
+    @media(max-width:900px){
+      .hero-container{grid-template-columns:1fr}.hero-content h1{font-size:42px}
+      .program-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:650px){
+      .header-container{padding:14px 16px}.logo{font-size:19px}.header-btn{padding:9px 13px;font-size:12px}
+      .hero{padding:55px 17px 65px}.hero-content h1{font-size:35px}.hero-content p{font-size:16px}
+      .section{padding:55px 17px}.section-title h2{font-size:29px}
+      .application-section{padding:50px 12px}.form-wrapper{padding:25px 17px}.form-header h2{font-size:27px}
+      .program-selector{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr;gap:16px}.form-group.full{grid-column:auto}
+      .phone-wrapper{grid-template-columns:105px 1fr}.why-grid{grid-template-columns:1fr}.cta h2{font-size:28px}
+      .whatsapp{width:52px;height:52px;right:15px;bottom:15px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="brand" aria-label="Amster Overseas home">
+      <div class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amster logo">
+          <path d="M16 18.5L32 10l16 8.5v27L32 54l-16-8.5v-27zm9.5 6.2h13l-6.5 18.1-6.5-18.1zm3.3 2.8l2.7 7.8 2.7-7.8h-5.4zm-10.3 19.4h30.8v2.3H18.5v-2.3z" fill="#fff"/>
+          <path d="M28.5 25.8h7v2.2h-7v-2.2zm0 5.1h7v2.2h-7v-2.2zm-10.3-5.7h5.8v2.2h-5.8v-2.2zm15.8 0h5.8v2.2h-5.8v-2.2z" fill="#d62828"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">AMSTER</span>
+        <span class="brand-sub">OVERSEAS</span>
+      </div>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#programs">Programs</a>
+      <a href="#apply">Apply</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a class="header-btn" href="#apply">Free Assessment</a>
+  </div>
+</header>
+
+
+
+<section class="section" id="programs">
+  <div class="container">
+    <div class="section-title">
+      <h2>Explore Your Opportunities</h2>
+      <p>Choose the pathway that matches your overseas immigration or employment goals.</p>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="application-section" id="apply">
+  <div class="form-wrapper">
+
+    <div class="form-header">
+      <h2>Check Your Eligibility</h2>
+      <p>Fill in your details and our team will get in touch with you.</p>
+    </div>
+
+    <div class="program-selector">
+      <div class="program-option active" data-program="Canada PR" onclick="selectProgram('Canada PR')">🇨🇦 Canada PR</div>
+      <div class="program-option" data-program="Australia PR" onclick="selectProgram('Australia PR')">🇦🇺 Australia PR</div>
+      <div class="program-option" data-program="Europe Work Permit" onclick="selectProgram('Europe Work Permit')">🇪🇺 Europe Work Permit</div>
+    </div>
+
+    <form id="leadForm" onsubmit="handleSubmit(event)">
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label>Full Name <span>*</span></label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Age <span>*</span></label>
+          <input type="number" id="age" min="18" max="70" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-group">
+          <label>Contact Number <span>*</span></label>
+          <div class="phone-wrapper">
+            <select id="contactCode" class="phone-code">
+              <option value="+91">🇮🇳 +91</option><option value="+971">🇦🇪 +971</option>
+              <option value="+974">🇶🇦 +974</option><option value="+968">🇴🇲 +968</option>
+              <option value="+966">🇸🇦 +966</option><option value="+1">🇨🇦 +1</option>
+              <option value="+61">🇦🇺 +61</option><option value="+44">🇬🇧 +44</option>
+              <option value="+49">🇩🇪 +49</option><option value="+33">🇫🇷 +33</option>
+              <option value="+39">🇮🇹 +39</option><option value="+48">🇵🇱 +48</option>
+              <option value="+36">🇭🇺 +36</option><option value="+353">🇮🇪 +353</option>
+              <option value="+34">🇪🇸 +34</option><option value="+351">🇵🇹 +351</option>
+            </select>
+            <input type="tel" id="contactNumber" placeholder="Mobile number" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>WhatsApp Number <span>*</span></label>
+          <div class="phone-wrapper">
+            <select id="whatsappCode" class="phone-code">
+              <option value="+91">🇮🇳 +91</option><option value="+971">🇦🇪 +971</option>
+              <option value="+974">🇶🇦 +974</option><option value="+968">🇴🇲 +968</option>
+              <option value="+966">🇸🇦 +966</option><option value="+1">🇨🇦 +1</option>
+              <option value="+61">🇦🇺 +61</option><option value="+44">🇬🇧 +44</option>
+              <option value="+49">🇩🇪 +49</option><option value="+33">🇫🇷 +33</option>
+              <option value="+39">🇮🇹 +39</option><option value="+48">🇵🇱 +48</option>
+              <option value="+36">🇭🇺 +36</option><option value="+353">🇮🇪 +353</option>
+              <option value="+34">🇪🇸 +34</option><option value="+351">🇵🇹 +351</option>
+            </select>
+            <input type="tel" id="whatsappNumber" placeholder="WhatsApp number" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Valid Email <span>*</span></label>
+          <input type="email" id="email" placeholder="yourname@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Occupation <span>*</span></label>
+          <input type="text" id="occupation" placeholder="Your current occupation" required>
+        </div>
+
+        <div class="form-group">
+          <label>Highest Qualification <span>*</span></label>
+          <select id="qualification" required>
+            <option value="">Select qualification</option>
+            <option>10th Pass</option><option>12th Pass</option><option>Diploma</option>
+            <option>Bachelor's Degree</option><option>Master's Degree</option>
+            <option>Professional Qualification</option><option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Work Experience <span>*</span></label>
+          <select id="workExperience" required>
+            <option value="">Select experience</option>
+            <option>No Experience</option><option>Less than 1 year</option>
+            <option>1-2 years</option><option>3-5 years</option>
+            <option>5-10 years</option><option>10+ years</option>
+          </select>
+        </div>
+
+        <div class="form-group full" id="europeCountryGroup">
+          <label>Preferred European Country <span>*</span></label>
+          <select id="europeCountry">
+            <option value="">Select preferred country</option>
+            <optgroup label="Schengen Countries">
+              <option>Germany</option><option>France</option><option>Italy</option>
+              <option>Poland</option><option>Hungary</option><option>Portugal</option>
+              <option>Spain</option><option>Netherlands</option><option>Austria</option>
+              <option>Czech Republic</option><option>Croatia</option><option>Greece</option>
+              <option>Lithuania</option><option>Latvia</option><option>Estonia</option>
+              <option>Slovakia</option><option>Slovenia</option><option>Finland</option>
+              <option>Sweden</option><option>Denmark</option><option>Belgium</option>
+              <option>Other Schengen Country</option>
+            </optgroup>
+            <optgroup label="Non-Schengen / Other Europe">
+              <option>Ireland</option><option>United Kingdom</option><option>Cyprus</option>
+              <option>Romania</option><option>Bulgaria</option><option>Serbia</option>
+              <option>Other European Country</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+
+      <div id="europeNote" class="europe-note">
+        <strong>Europe Work Permit:</strong> Minimum education qualification is any bachelor's graduate.
+        Final eligibility may depend on occupation, work experience, employer requirements and applicable immigration rules.
+      </div>
+      <div id="canadaNote" class="canada-note">
+        <strong>Canada PR:</strong> Minimum education qualification is any bachelor's graduate.
+        Final eligibility may depend on occupation, work experience, employer requirements and applicable immigration rules.
+      </div>
+      <div id="australiaNote" class="australia-note">
+        <strong>Australia PR:</strong> Minimum education qualification is any bachelor's graduate.
+        Final eligibility may depend on occupation, work experience, employer requirements and applicable immigration rules.
+      </div>
+
+      <div class="consent">
+        <input type="checkbox" id="consent" required>
+        <label for="consent"> 
+          I agree to be contacted by Amster Overseas regarding immigration and overseas opportunities based on the information provided above.
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitButton">Submit & Check Eligibility</button>
+
+      <div id="successMessage" class="message success-message">
+        ✓ Thank you! Your details have been submitted successfully. Our team will contact you shortly.
+      </div>
+
+      <div id="errorMessage" class="message error-message">
+        Something went wrong. Please try again.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose Amster Overseas?</h2>
+      <p>Start your overseas journey with professional guidance and profile-based assistance.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">🌍</div><h4>Global Opportunities</h4><p>Explore opportunities across multiple destinations.</p></div>
+      <div class="why-card"><div class="why-icon">👨‍💼</div><h4>Professional Guidance</h4><p>Get guidance based on your personal profile and selected pathway.</p></div>
+      <div class="why-card"><div class="why-icon">📋</div><h4>Profile Assessment</h4><p>Share your details so our team can understand your eligibility.</p></div>
+      <div class="why-card"><div class="why-icon">🤝</div><h4>Dedicated Assistance</h4><p>Our team can guide you through the next steps of your journey.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>© <span id="year"></span> <strong>Amster Overseas</strong>. All Rights Reserved.</p>
+  <p style="margin-top:7px;">Immigration and overseas opportunities are subject to applicable eligibility requirements and regulations.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919066555666" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☎</a>
+
+<script>
+  let selectedProgram = "Canada PR";
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function selectProgram(program) {
+    selectedProgram = program;
+
+    document.querySelectorAll(".program-option").forEach(option => {
+      option.classList.toggle("active", option.dataset.program === program);
+    });
+
+    const group = document.getElementById("europeCountryGroup");
+    const note = document.getElementById("europeNote");
+    const canNote = document.getElementById("canadaNote");
+    const ausNote = document.getElementById("australiaNote");
+    const country = document.getElementById("europeCountry");
+
+    if (program === "Europe Work Permit") {
+      group.style.display = "flex";
+      note.style.display = "block";
+      canNote.style.display = "block";
+      ausNote.style.display = "block";
+      country.required = true;
+    } else {
+      group.style.display = "none";
+      note.style.display = "none";
+      canNote.style.display = "none";
+      ausNote.style.display = "none";
+      country.required = false;
+      country.value = "";
+    }
+  }
+
+  function getURLParameter(name) {
+    return new URLSearchParams(window.location.search).get(name);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const button = document.getElementById("submitButton");
+    const success = document.getElementById("successMessage");
+    const error = document.getElementById("errorMessage");
+
+    success.style.display = "none";
+    error.style.display = "none";
+    button.disabled = true;
+    button.textContent = "Submitting...";
+
+    const lead = {
+      program: selectedProgram,
+      fullName: document.getElementById("fullName").value.trim(),
+      age: document.getElementById("age").value,
+      contactNumber: document.getElementById("contactCode").value + " " + document.getElementById("contactNumber").value.trim(),
+      whatsappNumber: document.getElementById("whatsappCode").value + " " + document.getElementById("whatsappNumber").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      occupation: document.getElementById("occupation").value.trim(),
+      qualification: document.getElementById("qualification").value,
+      workExperience: document.getElementById("workExperience").value,
+      europeCountry: document.getElementById("europeCountry").value,
+      leadSource: getURLParameter("utm_source") || "Landing Page",
+      campaign: getURLParameter("utm_campaign") || "",
+      landingPage: window.location.href
+    };
+
+    google.script.run
+      .withSuccessHandler(function(response) {
+        button.disabled = false;
+        button.textContent = "Submit & Check Eligibility";
+
+        if (response && response.success) {
+          success.style.display = "block";
+          document.getElementById("leadForm").reset();
+          selectProgram("Canada PR");
+          success.scrollIntoView({behavior:"smooth", block:"center"});
+        } else {
+          error.textContent = response && response.message ? response.message : "Unable to submit your details.";
+          error.style.display = "block";
+        }
+      })
+      .withFailureHandler(function() {
+        button.disabled = false;
+        button.textContent = "Submit & Check Eligibility";
+        error.textContent = "Unable to submit your details. Please try again.";
+        error.style.display = "block";
+      })
+      .submitLead(lead);
+  }
+
+  selectProgram("Canada PR");
+</script>
+
+</body>
+</html>

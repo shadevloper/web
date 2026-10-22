@@ -33,6 +33,8 @@ import LeadGen from './components/leadgen/LeadGen';
 import Highlights from './components/highlights/Highlights';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import EnquiryForm from './components/enquiry/EnquiryForm';
+import PrivacyPolicyPage from './components/legal/PrivacyPolicyPage';
+import TermsAndConditionsPage from './components/legal/TermsAndConditionsPage';
 // import DoubleSwiper from "./DoubleSwiper";
 
 
@@ -225,6 +227,8 @@ return (
           <Route path="/news/:id" element={<NewsPostPage />} />
           <Route path="/free-assessment" element={<LeadGenPage />} />
           <Route path="/enquiry" element={<EnquiryPage />} />
+          <Route path="/privacy-policy" element={<><PrivacyPolicyPage /><Footer /></>} />
+          <Route path="/terms-and-conditions" element={<><TermsAndConditionsPage /><Footer /></>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         
