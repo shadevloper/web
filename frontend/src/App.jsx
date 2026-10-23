@@ -227,7 +227,7 @@ return (
           <Route path="/news/:id" element={<NewsPostPage />} />
           <Route path="/free-assessment" element={<LeadGenPage />} />
           <Route path="/enquiry" element={<EnquiryPage />} />
-          <Route path="/privacy-policy" element={<><PrivacyPolicyPage /><Footer /></>} />
+          <Route path="/PrivacyPolicy" element={<><PrivacyPolicyPage /><Footer /></>} />
           <Route path="/terms-and-conditions" element={<><TermsAndConditionsPage /><Footer /></>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
